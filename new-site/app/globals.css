@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+}
+
+:root {
+  --background: #eeeeee;
+  --foreground: #444444;
+  --link-color: #333333;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--link-color);
+  --font-sans: 'Titillium Web', 'Roboto', Arial, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Titillium Web', 'Roboto', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+@layer utilities {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+}
