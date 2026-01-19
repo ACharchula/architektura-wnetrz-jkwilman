@@ -136,6 +136,7 @@ export default function Header() {
               <li className="border-b border-black/[0.07]">
                 <Link 
                   href="/oferta" 
+                  onClick={() => setIsMenuOpen(false)}
                   className={`block text-foreground py-3.5 px-5 text-base ${isActive('/oferta') ? 'font-bold' : 'font-semibold'}`}
                 >
                   Oferta
@@ -146,6 +147,7 @@ export default function Header() {
                   <div className="flex items-center">
                     <Link 
                       href="/realizacje" 
+                      onClick={() => setIsMenuOpen(false)}
                       className={`flex-1 text-foreground py-3.5 pl-5 text-base ${isActive('/realizacje') ? 'font-bold' : 'font-semibold'}`}
                     >
                       Realizacje
@@ -168,6 +170,7 @@ export default function Header() {
                     <li className="border-b border-black/[0.07]">
                       <Link 
                         href="/realizacje/wnetrza-prywatne" 
+                        onClick={() => setIsMenuOpen(false)}
                         className="block text-foreground py-3 pl-10 text-sm"
                       >
                         Wnętrza prywatne
@@ -176,6 +179,7 @@ export default function Header() {
                     <li className="border-b border-black/[0.07]">
                       <Link 
                         href="/realizacje/wnetrza-uzytecznosci-publicznej" 
+                        onClick={() => setIsMenuOpen(false)}
                         className="block text-foreground py-3 pl-10 text-sm"
                       >
                         Wnętrza użyteczności publicznej
@@ -187,6 +191,7 @@ export default function Header() {
               <li className="border-b border-black/[0.07]">
                 <Link 
                   href="/publikacje" 
+                  onClick={() => setIsMenuOpen(false)}
                   className={`block text-foreground py-3.5 px-5 text-base ${isActive('/publikacje') ? 'font-bold' : 'font-semibold'}`}
                 >
                   Publikacje
@@ -195,6 +200,7 @@ export default function Header() {
               <li className="border-b border-black/[0.07]">
                 <Link 
                   href="/referencje" 
+                  onClick={() => setIsMenuOpen(false)}
                   className={`block text-foreground py-3.5 px-5 text-base ${isActive('/referencje') ? 'font-bold' : 'font-semibold'}`}
                 >
                   Referencje
@@ -203,6 +209,7 @@ export default function Header() {
               <li className="border-b border-black/[0.07]">
                 <Link 
                   href="/kontakt" 
+                  onClick={() => setIsMenuOpen(false)}
                   className={`block text-foreground py-3.5 px-5 text-base ${isActive('/kontakt') ? 'font-bold' : 'font-semibold'}`}
                 >
                   Kontakt
