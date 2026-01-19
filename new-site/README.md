@@ -174,28 +174,44 @@ https://kwilman.com/sitemap.xml
 
 ## Deployment
 
-### Vercel (Recommended)
+### GitHub Pages (Current Setup)
+
+The site is configured for automatic deployment to GitHub Pages.
+
+**Quick Deploy:**
 
 ```bash
-# Install Vercel CLI
-npm i -g vercel
+# Push to GitHub
+git add .
+git commit -m "Deploy site"
+git push origin main
 
-# Deploy
-vercel
+# Deployment happens automatically via GitHub Actions
 ```
 
-### Other Platforms
+**First Time Setup:**
 
-1. Build the project:
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for complete instructions.
+
+**Key Features:**
+- ✅ Automatic deployment on push to `main`
+- ✅ Custom domain: kwilman.com
+- ✅ Free hosting
+- ✅ Global CDN
+- ✅ HTTPS enabled
+
+### Local Static Export
+
+Test the static build locally:
+
 ```bash
 npm run build
+npx serve out
 ```
-
-2. Deploy the `.next` folder and `public` directory
 
 ### Environment Variables
 
-No environment variables required for basic deployment.
+No environment variables required.
 
 ## Configuration
 
