@@ -1,5 +1,8 @@
 import { ImageResponse } from 'next/og';
 
+// Route segment config
+export const dynamic = 'force-static';
+
 // Image metadata
 export const alt = 'Jolanta Kwilman – Pracownia Architektury Wnętrz';
 export const size = {

@@ -2,6 +2,8 @@ import { MetadataRoute } from 'next';
 import projects from '@/data/projects.json';
 import publications from '@/data/publications.json';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://kwilman.com';
   const currentDate = new Date();
